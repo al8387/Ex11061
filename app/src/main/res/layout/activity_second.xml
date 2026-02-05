@@ -19,7 +19,7 @@
         android:id="@+id/resultTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:gravity="start"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

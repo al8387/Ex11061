@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 intent.putExtra("firstTerm", firstTerm);
                 intent.putExtra("difference", difference);
                 startActivity(intent);
-                // Reset spinner for next use
                 sP.setSelection(0);
 
             } catch (NumberFormatException e) {

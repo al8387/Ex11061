@@ -56,7 +56,7 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
             seriesTerms.add(currentTerm);
             if (seriesType.equals("סדרה חשבונית")) {
                 currentTerm += difference;
-            } else { // Geometric series
+            } else {
                 currentTerm *= difference;
             }
         }
@@ -71,13 +71,13 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
         if (seriesType.equals("סדרה חשבונית")) {
             nextTerm = selectedTerm + difference;
             sum = (position + 1) / 2.0 * (2 * firstTerm + position * difference);
-        } else { // Geometric series
-            nextTerm = selectedTerm * difference;
+        } else {
             if (difference == 1) {
                 sum = (position + 1) * firstTerm;
             } else {
                 sum = firstTerm * (Math.pow(difference, position + 1) - 1) / (difference - 1);
             }
+            nextTerm = selectedTerm * difference;
         }
 
         String result = String.format(Locale.getDefault(),
