@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
      * Called when the activity is first created. This method initializes the user interface,
      * sets the content view, and configures the main spinner with its options and listener.
      * @param savedInstanceState If the activity is being re-initialized after
-     *     previously being shut down then this Bundle contains the data it most
-     *     recently supplied in onSaveInstanceState.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
